@@ -4,7 +4,7 @@ pipeline {
         jdk 'jdk11'
     }
     environment {
-        SCANNER_HOME = tool 'sonar-scanner'
+        SCANNER_HOME = tool 'sonar-server'
     }
     stages {
         stage('clean workspace') {
