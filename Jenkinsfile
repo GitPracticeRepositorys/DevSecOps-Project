@@ -84,7 +84,7 @@ pipeline{
         }
 
     }
-    #post {
+    post {
      always {
         emailext attachLog: true,
             subject: "'${currentBuild.result}'",
@@ -92,7 +92,7 @@ pipeline{
                 "Build Number: ${env.BUILD_NUMBER}<br/>" +
                 "URL: ${env.BUILD_URL}<br/>",
             to: 'iambatmanthegoat@gmail.com',                                #change mail here
-            attachmentsPattern: 'trivyfs.txt,trivyimage.txt'
+            attachmentsPattern: 'trivyfs.txt,trivyimage.txt' //
         }
     }
 }
