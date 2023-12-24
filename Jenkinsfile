@@ -19,7 +19,7 @@ pipeline {
         }
         stage("Sonarqube Analysis") {
             steps {
-                withSonarQubeEnv('sonar-server') {
+                withSonarQubeEnv('sonar-scanner') {
                     sh '''$sonar-scanner \
                              -Dsonar.projectKey=Netflix \
                              -Dsonar.sources=. \
