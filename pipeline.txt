@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    docker-node-1
     tools{
         jdk 'jdk17'
         nodejs 'node16'
