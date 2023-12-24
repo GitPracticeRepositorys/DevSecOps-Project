@@ -15,7 +15,7 @@ pipeline {
         }
         stage('Checkout from Git') {
             steps {
-                git branch: 'main', url: https://github.com/GitPracticeRepositorys/DevSecOps-Project.git
+                git branch: 'main', url: 'https://github.com/GitPracticeRepositorys/DevSecOps-Project.git'
             }
         }
         stage("Sonarqube Analysis") {
