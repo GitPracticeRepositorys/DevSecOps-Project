@@ -25,7 +25,7 @@ pipeline{
                     -Dsonar.projectKey=Netflix '''
                 }
             }
-        }
+        } //
         stage("quality gate"){
            steps {
                 script {
