@@ -1,8 +1,5 @@
 pipeline{
-    docker-node-1
-    tools{
-        jdk 'jdk17'
-        nodejs 'node16'
+    agent { label 'docker-node-1' }
     }
     environment {
         SCANNER_HOME=tool 'sonar-scanner'
