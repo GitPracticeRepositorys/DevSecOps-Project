@@ -84,7 +84,7 @@ pipeline{
         }
 
     }
-    post {
+  #  post {
      always {
         emailext attachLog: true,
             subject: "'${currentBuild.result}'",
