@@ -1,5 +1,5 @@
 pipeline{
-    agent any
+    agent { label 'Built-In Node' }
     tools{
         jdk 'jdk17'
         nodejs 'nodejs'
