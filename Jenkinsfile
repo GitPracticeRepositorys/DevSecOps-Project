@@ -50,5 +50,13 @@ pipeline{
                 sh 'docker run -d --name netflix -p 8081:80 shivakrishna99/netflix:latest'
             }
         }
+        stage('Deploy to kubernets'){
+            steps{
+                dir('Kubernetes') {
+                sh 'kubectl apply -f deployment.yml'
+                sh 'kubectl apply -f service.yml'
+                }
+            }
+        }
     }
 }
