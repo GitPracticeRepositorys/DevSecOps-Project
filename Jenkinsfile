@@ -1,7 +1,7 @@
 pipeline{
     agent { label 'docker-node-1' }
     tools{
-        jdk 'jdk17'
+        jdk 'jdk11'
         nodejs 'nodejs'
     }
     environment {
