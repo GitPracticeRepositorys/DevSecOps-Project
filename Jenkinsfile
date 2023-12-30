@@ -1,5 +1,5 @@
 pipeline{
-    agent { label 'Built-In Node' }
+    agent { label 'docker-node-1' }
     tools{
         jdk 'jdk17'
         nodejs 'nodejs'
