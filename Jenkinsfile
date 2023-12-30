@@ -35,10 +35,9 @@ pipeline{
             }
         }
         stage("Docker Build & Push"){
-            steps{
-                script  
-                       sh "docker tag netflix shivakrishna99/netflix:latest "
-                       sh "docker push shivakrishna99/netflix:latest "
+            steps{ 
+                sh "docker tag netflix shivakrishna99/netflix:latest "
+                sh "docker push shivakrishna99/netflix:latest "
             }
         }
         stage("TRIVY"){
